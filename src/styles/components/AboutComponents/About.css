@@ -1,19 +1,35 @@
 
 .About-header {
-    width: 500px;
+    
     /* Fixed width for the section */
     margin: 0 auto;
-    /* Center the section */
-}
-.About-header h2 {
-  font-size: 2.5rem;       /* make it larger */
+    
   color: #213a79;          /* change text color */
-  font-weight: 700;        /* bold */
+        /* bold */
   margin-bottom: 1rem;     /* space below */
   line-height: 1.2;        /* tighten line height */
-  text-transform: uppercase; /* optional stylistic choice */
+  
+    /* Center the section */
 }
+.About-header h1 {
+    font-weight: 700;  
+    font-size: 60px;       /* make it larger */
+  
+}
+.About-header span {
+    
+    color: #2366ee;          /* change text color */
+    
+  }
+.About-header p {
+    
+    font-size: 20px;
+    
+  }
+
+
 .About-buttons {
+    
     display: flex;
     justify-content: center;
     /* Center the buttons */
@@ -22,29 +38,41 @@
     margin-top: 1rem;
     /* Space above the buttons */
     margin-bottom: 2.5rem;
+    font-size: 40px;
+
+
     /* ← this creates the gap before the cards */
 
 }
+.About-buttons button{
+    padding: 1rem 4rem; /* Increase padding for height and width */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
 
 .About-Cards {
-    padding-top: 2%;
+    padding: 2%;
     display: flex;
     /* lay children out in a row */
     flex-direction: row;
     /* be explicit: row, not column */
 
-    gap: 2rem;
+    gap: 6rem;
     /* space between each card */
     justify-content: center;
     /* center them in the container */
 
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     /* space above the group */
 
     background: white;
     border-radius: 1rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    width: 700px;
+    width: 1200px;
     /* Fixed width for the section */
     margin: 0 auto;
     /* Center the section */
@@ -60,3 +88,25 @@
         gap: 1.5rem;
     }
 }
+
+
+.About-Cards .card-element {
+    box-shadow: none;
+    /* slightly darker on hover */
+
+    
+}
+.About-Cards .card-element .icon-circle img {
+    transform: scale(2);
+    animation: breath 2.5s ease-in-out infinite;
+    
+ }
+.About-Cards .card-element .icon-circle img:hover {
+    transform: scale(1.3);
+    
+ }
+
+@keyframes breath {
+    0%, 100%   { transform: scale(1);     }
+    50%        { transform: scale(1.5);  }
+  }

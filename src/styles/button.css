@@ -16,11 +16,7 @@
     transition: background-color 0.4s ease, transform 0.4s ease;
   }
   
-  .contact-button:hover {
-    background-color: rgb(29, 78, 216); /* darker blue on hover */
-    transform: scale(1.03); /* slightly larger */
-  }
-  
+
 
   .opposite-button {
     display: inline-flex;
@@ -41,7 +37,12 @@
     transition: background-color 0.4s ease, transform 0.4s ease;
   }
 
-  .opposite-button:hover {
-    background-color: rgb(247, 248, 252); /* darker blue on hover */
-    transform: scale(1.03); /* slightly larger */
+  .contact-button:hover, .opposite-button:hover {
+    animation: breath 1.3s ease-in-out infinite;
   }
+
+  @keyframes breath {
+    0%, 100%   { transform: scale(1);     }
+    50%        { transform: scale(1.5);  }
+  }
+  

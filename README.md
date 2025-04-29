@@ -7,4 +7,5 @@
         * npm install 
         * npm run dev
 
-* guidlines
+* guidlines:
+    - make a new branch when needed 

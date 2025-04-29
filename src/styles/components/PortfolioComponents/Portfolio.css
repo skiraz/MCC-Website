@@ -70,14 +70,14 @@ color: #213a79;          /* change text color */
 font-weight: 700;        /* bold */
 margin-bottom: 1rem;     /* space below */
 line-height: 1.2;        /* tighten line height */
-text-transform: uppercase; /* optional stylistic choice */
+
 }
 
 .Portfolio-Cards {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* ← exactly 3 columns */
-  gap: 0.54rem;                               
+  gap: 1rem;                               
   /* Fixed width for the section */
   margin: 0 auto;
   
@@ -98,8 +98,19 @@ text-transform: uppercase; /* optional stylistic choice */
 }
 
 
-.Portfolio-text .nav-button {
-  width: 100%;              /* fill the full width of the parent */
+.Portfolio-text .nav-button .contact-button {
+  
   text-align: left;         /* push its child button to the left */
-  margin-top: 2rem;         /* optional spacing above the button */
+  margin-top: 4rem;         /* optional spacing above the button */
+  font-weight: 700;
+}
+
+.Portfolio-Cards .card-element {
+  animation: breath 2s ease-in-out infinite;
+  box-shadow: 0.5 4px 6px rgba(66, 20, 175, 0.1);
+}
+
+@keyframes breath {
+  0%, 100%   { transform: scale(1);     }
+  50%        { transform: scale(1.5);  }
 }

@@ -1,11 +1,31 @@
-.services-header {
-    width: 500px;
-    /* Fixed width for the section */
-    margin: 0 auto;
-    text-align: center;
-    /* Center the section */
-    
 
+.services-header {
+    
+  /* Fixed width for the section */
+  margin: 0 auto;
+  
+color: #213a79;          /* change text color */
+      /* bold */
+margin-bottom: 3rem;     /* space below */
+line-height: 1.2;        /* tighten line height */
+
+  /* Center the section */
+}
+.services-header h2 {
+  font-weight: 700;  
+  font-size: 40px;    
+  
+
+}
+.services-header span {
+  
+  color: #2366ee;          /* change text color */
+  
+}
+.services-header p {
+  
+  font-size: 15px;
+  
 }
 
 
@@ -14,7 +34,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
     gap: 2rem;                               
-    width: 700px;
+    width: 900px;
+    height: 400px;
     /* Fixed width for the section */
     margin: 0 auto;
     
@@ -33,5 +54,22 @@
       grid-template-columns: 1fr;
     }
   }
-  
+  .services-Cards .card-element .icon-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0); /* Remove offset to keep it inside the div */
+    background-color: transparent; /* No background color */
+    
+    
+  }
+  .card-element {
+    position: relative;
+  }  
+
+  .services-Cards .card-element .title {
+    padding-top: 2rem;
+    
+    
+  }
   

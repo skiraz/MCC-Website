@@ -3,32 +3,64 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
   gap: 2rem;                               
-  width: 700px;
-  /* Fixed width for the section */
-  margin: 0 auto;
-  
-}
-.Products-header {
   width: 500px;
   /* Fixed width for the section */
   margin: 0 auto;
-  text-align: center;
-  /* Center the section */
   
-
+}
+.Products-Cards .card-element  {
+  
+  align-items: left;
+  text-align: left;
+  
+  
 }
 
+.Products-Cards .card-element .descrip {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  
+  
+  line-height: 1.4;
+}
+.Products-Cards .card-element .contact-button {
+  text-align: center;         /* push its child button to the left */ 
+  margin-top: 2rem;     
+  padding: 1rem 2rem; /* Increase padding for height and width */
+}
 
-.Products-Cards {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
-  gap: 5rem;                               
-  width: 700px;
+.Products-header {
+    
   /* Fixed width for the section */
   margin: 0 auto;
   
+color: #213a79;          /* change text color */
+      /* bold */
+margin-bottom: 3rem;     /* space below */
+line-height: 1.2;        /* tighten line height */
+
+  /* Center the section */
 }
+.Products-header h2 {
+  font-weight: 700;  
+  font-size: 40px;    
+  
+
+}
+.Products-header span {
+  
+  color: #2366ee;          /* change text color */
+  
+}
+.Products-header p {
+  
+  font-size: 15px;
+  
+}
+
+
+
 
 /* Responsively drop to 2 columns on medium screens */
 @media (max-width: 768px) {
@@ -42,4 +74,11 @@
   .Products-Cards {
     grid-template-columns: 1fr;
   }
+}
+
+
+.Products .learnMoreButton{
+  
+  text-align: center;         /* push its child button to the left */ 
+  margin-top: 2rem;         /* optional spacing above the button */">
 }

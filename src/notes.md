@@ -10,10 +10,10 @@ todos:
 - [ ] the page on 100% size have scrollers remove them 
 - [ ] test on the phone 
 - [ ] logo image 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] use chatgpt to make the copy writing better and aligned with our goals 
+- [x] make the navbar scrolls to the section needed 
+- [ ] grammer check on the whole website 
+- [ ] put the actuall data of our company 
 
 
 
@@ -25,5 +25,6 @@ tip you can search and replace
 
 
 -----
- ideas : make the course section with enrollment using their emial and demonstrate this content on social media, + use the email to send notifications on the upcoming courses. 
+ ideas : 
+- make the course section with enrollment using their emial and demonstrate this content on social media, + use the email to send notifications on the upcoming courses. 
 
