@@ -1,0 +1,134 @@
+/* src/styles/components/PreFooterComponent/PreFooter.css */
+
+.PreFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* four equal columns */
+    gap: 2rem;
+    
+    /* Force the grid to span full width (instead of centering in its parent) */
+    width: 100%;
+    max-width: 1200px;    /* optional cap */
+    margin: 0 auto;       /* center that max-width block */
+    
+    /* If .section is a flex-container doing align-items:center, override it: */
+    align-self: stretch;
+  }
+  
+  /* On narrower screens, drop to two columns */
+  @media (max-width: 900px) {
+    .PreFooter {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* On mobile, a single column */
+  @media (max-width: 600px) {
+    .PreFooter {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /*— rest of your pf-col, pf-logo, pf-social, etc stay the same —*/
+  
+  .pf-col h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #1e3a8a;
+  }
+  
+  .pf-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pf-col ul li + li {
+    margin-top: 0.5rem;
+  }
+  
+  .pf-col ul li a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+  
+  .pf-col ul li a:hover {
+    opacity: 1;
+  }
+  
+  /* Logo column */
+  .logo-col .pf-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .logo-col p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #64748b;
+  }
+  
+  /* Social icons */
+  .pf-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .pf-social a img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+  
+  .pf-social a img:hover {
+    opacity: 1;
+  }
+  
+  .prefooter {
+    /* existing grid rules… */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    color: #475569;
+  
+    /* 👉 make it fill its parent’s width */
+    width: 100%;
+    align-self: stretch;
+    max-width: 1200px;   /* optional, to cap very wide screens */
+    margin: 0 auto;      /* center that max-width block */
+  }
+  /* in your prefooter.css or social.css */
+.pf-social {
+    display: flex;
+    gap: 1rem;               /* space between icons */
+  }
+  
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;             /* outer circle diameter */
+    height: 40px;
+    background-color: #e0f2fe; /* light‐blue circle */
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .social-icon img {
+    width: 20px;             /* icon size */
+    height: 20px;
+    /* if your SVG uses currentColor for fill, you can tint it: */
+    filter: invert(25%) sepia(12%) saturate(1800%) hue-rotate(180deg) brightness(90%) contrast(90%);
+  }
+  
+  .social-icon:hover {
+    background-color: #bae6fd; /* slightly darker on hover */
+    transform: scale(1.1);
+  }

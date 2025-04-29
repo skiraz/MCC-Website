@@ -1,0 +1,62 @@
+
+.About-header {
+    width: 500px;
+    /* Fixed width for the section */
+    margin: 0 auto;
+    /* Center the section */
+}
+.About-header h2 {
+  font-size: 2.5rem;       /* make it larger */
+  color: #213a79;          /* change text color */
+  font-weight: 700;        /* bold */
+  margin-bottom: 1rem;     /* space below */
+  line-height: 1.2;        /* tighten line height */
+  text-transform: uppercase; /* optional stylistic choice */
+}
+.About-buttons {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons */
+    gap: 1rem;
+    /* Space between buttons */
+    margin-top: 1rem;
+    /* Space above the buttons */
+    margin-bottom: 2.5rem;
+    /* ← this creates the gap before the cards */
+
+}
+
+.About-Cards {
+    padding-top: 2%;
+    display: flex;
+    /* lay children out in a row */
+    flex-direction: row;
+    /* be explicit: row, not column */
+
+    gap: 2rem;
+    /* space between each card */
+    justify-content: center;
+    /* center them in the container */
+
+    margin-top: 2rem;
+    /* space above the group */
+
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 700px;
+    /* Fixed width for the section */
+    margin: 0 auto;
+    /* Center the section */
+
+
+
+}
+
+/* On smaller screens, stack cards vertically */
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

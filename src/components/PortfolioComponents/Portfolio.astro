@@ -1,0 +1,50 @@
+---
+import "../../styles/components/PortfolioComponents/Portfolio.css";
+import CardElement from "../AboutComponents/Card_Element.astro";
+
+---
+
+<section id="Portfolio" class="section">
+  <div class="two-col-grid">
+    <!-- first coloumn -->
+    <div class="Portfolio-text">
+      <h2>Innovative Solutions for a Connected World</h2>
+      <p>
+        At MC2 (Microelectronic Corporations), we're dedicated to pushing the
+        boundaries of what's possible with robotics and artificial intelligence.
+        Founded by a team of experienced engineers and researchers, our mission
+        is to create technology that enhances human capability and solves
+        complex challenges across industries. With over 15 years of combined
+        experience, we've helped companies around the world implement
+        cutting-edge solutions.
+      </p>
+      <div class="Portfolio-Cards" >
+        <CardElement
+        title="15+"
+        description="Years Experience"
+      />
+      <CardElement
+        title="200+"
+        description="Projects Completed"
+      />
+      <CardElement
+        title="20+"
+        description="Tech Experts"
+      />
+    </div>  
+
+    <div class="nav-button">
+        <button class="contact-button">Learn More About Us</button>
+      </div>    
+
+    </div>
+
+    <!-- second coloumn -->
+    <div class="photo-card">
+      <img src="/assets/img/coding.avif" alt="Main shot" class="photo-thumb" />
+
+      
+      <img src="/assets/img/pepper.avif" alt="Detail shot" class="photo-main" />
+    </div>
+  </div>
+</section>

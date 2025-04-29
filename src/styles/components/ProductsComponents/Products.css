@@ -1,0 +1,45 @@
+.Products-Cards {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
+  gap: 2rem;                               
+  width: 700px;
+  /* Fixed width for the section */
+  margin: 0 auto;
+  
+}
+.Products-header {
+  width: 500px;
+  /* Fixed width for the section */
+  margin: 0 auto;
+  text-align: center;
+  /* Center the section */
+  
+
+}
+
+
+.Products-Cards {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
+  gap: 5rem;                               
+  width: 700px;
+  /* Fixed width for the section */
+  margin: 0 auto;
+  
+}
+
+/* Responsively drop to 2 columns on medium screens */
+@media (max-width: 768px) {
+  .Products-Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* And to 1 column on small/mobile */
+@media (max-width: 480px) {
+  .Products-Cards {
+    grid-template-columns: 1fr;
+  }
+}

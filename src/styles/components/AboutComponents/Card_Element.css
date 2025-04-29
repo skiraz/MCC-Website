@@ -1,0 +1,55 @@
+.card-element {
+  background-color: white;
+  border-radius: 0.75rem;                         /* rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);        /* subtle drop-shadow */
+  padding: 1.5rem;                                 /* inner spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Lift on hover */
+.card-element:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon wrapper */
+.card-element .icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-element .icon-circle img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Title */
+.card-element .title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+/* Description */
+.card-element .descrip {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+
+.card-element .image img {
+  width: 100%;
+  height: 100%;
+}

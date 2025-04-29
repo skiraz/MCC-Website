@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    color: #7c88a3; /* ✅ Global text color */
+  
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    line-height: 1.6;
+  
+  }
+
+  html, body {
+    font-family: ui-sans-serif, system-ui, sans-serif,
+                 "Apple Color Emoji", "Segoe UI Emoji",
+                 "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(30, 58, 138, 0.7);
+  }

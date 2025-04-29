@@ -1,0 +1,35 @@
+---
+
+import "../../styles/components/AboutComponents/Card_Element.css";
+
+interface Props {
+  icon?: string;
+  image?: string;
+  title: string;
+  description: string;
+  button?: string;
+}
+
+const { icon, image, title, description,button } = Astro.props as Props;
+---
+<div class="card-element">
+  {icon && (
+    <div class="icon-circle">
+      <img src={icon} alt={title} />
+    </div>
+  )}
+  {image &&  (
+    
+    <div class="image">
+      <img src={image} alt={title} />
+    </div>
+  )}
+  <div class="title">{title}</div>
+  <div class="descrip">{description}</div>
+
+  {button && (
+    <div class="nav-button">
+      <button class="contact-button">{description}</button>
+    </div>
+  )}4
+</div>

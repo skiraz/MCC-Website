@@ -1,0 +1,105 @@
+/* e.g. in services.css or two-col.css */
+
+.section{
+  display: flex;
+  flex-direction: column;
+
+  /* center items horizontally */
+  align-items: center;
+
+  /* also center any inline text */
+  text-align: center;
+  
+}
+
+.two-col-grid {
+  display: flex;           /* turn on flex layout */
+  flex-direction: row;     /* items go left→right */
+  gap: 4rem;           /* 2rem between both rows & columns */
+  /* space between columns */
+  flex-wrap: wrap;         /* allow wrapping down if too many */
+}
+
+
+@media (max-width: 600px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;  /* single column under 600px */
+  }
+}
+
+
+.photo-card {
+  position: relative;        /* establish a containing block for the thumb */
+  width: 500px;              /* set your desired card width */
+  /* optional fixed height, or let it size by the image aspect ratio: */
+  /* height: 260px; */
+  margin: auto;              
+  overflow: visible;         /* allow the thumb to sit outside */
+}
+
+.photo-card .photo-main {
+  display: block;
+  width: 100%;               /* fill the card’s width */
+  height: auto;              /* maintain its aspect ratio */
+  border-radius: 0.75rem;
+  object-fit: cover;         /* crop/cover if you force a height */
+}
+
+.photo-card .photo-thumb {
+  position: absolute;        /* remove from normal flow */
+  bottom: -20px;             /* pull 20px below the main’s bottom edge */
+  left:   -20px;             /* pull 20px to the left of the main’s left edge */
+  width: 120px;               /* thumbnail width */
+  height: 120px;              /* thumbnail height */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.Portfolio-text {
+  width: 500px;
+  /* Fixed width for the section */
+  margin: 0 auto;
+  /* Center the section */
+}
+.Portfolio-text h2 {
+font-size: 2.5rem;       /* make it larger */
+color: #213a79;          /* change text color */
+font-weight: 700;        /* bold */
+margin-bottom: 1rem;     /* space below */
+line-height: 1.2;        /* tighten line height */
+text-transform: uppercase; /* optional stylistic choice */
+}
+
+.Portfolio-Cards {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* ← exactly 3 columns */
+  gap: 0.54rem;                               
+  /* Fixed width for the section */
+  margin: 0 auto;
+  
+}
+
+/* Responsively drop to 2 columns on medium screens */
+@media (max-width: 768px) {
+  .Portfolio-Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* And to 1 column on small/mobile */
+@media (max-width: 480px) {
+  .Portfolio-Cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.Portfolio-text .nav-button {
+  width: 100%;              /* fill the full width of the parent */
+  text-align: left;         /* push its child button to the left */
+  margin-top: 2rem;         /* optional spacing above the button */
+}

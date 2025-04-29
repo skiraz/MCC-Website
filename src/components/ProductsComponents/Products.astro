@@ -1,0 +1,41 @@
+---
+import "../../styles/components/ProductsComponents/Products.css";
+import Card_Element from '../AboutComponents/Card_Element.astro';
+---
+<section id="Products" class="section">
+<div class="Products">
+  <div class="Products-header">
+    <h2>Featured Products</h2>
+    <p>
+      Expand your skills with our industry-leading courses taught by experienced professionals.
+    </p>
+    </div>
+
+    <div class="Products-Cards">
+      <Card_Element
+      image="/assets/img/test.avif"
+      title="AI Solutions"
+      description="Intelligent software solutions built with advanced algorithms."
+      button = "Learn More"
+    />
+    <Card_Element
+    image="/assets/img/coding2.avif"
+    title="AI Solutions"
+    description="Intelligent software solutions built with advanced algorithms."
+    button = "Learn More"
+  />
+  <Card_Element
+  image="/assets/img/hardware.avif"
+  title="AI Solutions"
+  description="Intelligent software solutions built with advanced algorithms."
+  button = "Learn More"
+/>
+  </div>
+
+  <div style="  width: 100%;              /* fill the full width of the parent */
+  text-align: center;         /* push its child button to the left */ 
+  margin-top: 2rem;         /* optional spacing above the button */">
+  <button class="contact-button">Learn More</button>
+</div>
+</div>
+</section>
