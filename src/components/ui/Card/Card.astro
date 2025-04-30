@@ -14,14 +14,15 @@ interface Props {
 
 const { icon, image, title, description,button } = Astro.props as Props;
 ---
-<div class="Card">
-  {icon && (
+<div class:list={{
+  Card: true,
+  "no-padding": !!image
+}}>  {icon && (
     <div class="icon-circle">
       <img src={icon} alt={title} />
     </div>
   )}
   {image &&  (
-    
     <div class="image">
       <img src={image} alt={title} />
     </div>

@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 0.75rem;                         /* rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);        /* subtle drop-shadow */
-  padding: 1.5rem;                                 /* inner spacing */
+  padding: 1.5rem;   
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +10,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
+
+.Card.no-padding {
+  padding: 0 !important;
+}
+
 
 /* Lift on hover */
 .Card:hover {
@@ -43,13 +48,19 @@
   
 }
 
-/* Description */
-.Card .descrip {
+.description {
   font-size: 0.9rem;
   
   
   line-height: 1.4;
 }
 
+.image img {
+  width: 500px;     /* or whatever fits your design */
+  height: auto;     /* maintains aspect ratio */
+  object-fit: contain;
+}
 
-
+.btn-filled{
+  margin-bottom: 1rem ;
+}
