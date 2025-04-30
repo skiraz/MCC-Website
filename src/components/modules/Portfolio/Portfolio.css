@@ -77,7 +77,7 @@ line-height: 1.2;        /* tighten line height */
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* ← exactly 3 columns */
-  gap: 1rem;                               
+  gap: 2rem;                               
   /* Fixed width for the section */
   margin: 0 auto;
   

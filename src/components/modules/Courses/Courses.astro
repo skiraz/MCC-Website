@@ -1,13 +1,16 @@
 ---
 import CourseCard from "@ui/courseCard/courseCard.astro";
 import "./Courses.css";
+import SectionHeader from "@nanoModules/sectionHeader/sectionHeader.astro";
 ---
 
 <section id="Courses" class="section">
-  <div class="Courses-header">
-  <h2>Technical Courses</h2>
-  <p>Expand your skills with our industry-leading courses taught by experienced professionals.</p>
-</div>
+
+  <SectionHeader
+  heading = "Technical Courses"
+   paragraph = "Expand your skills with our industry-leading courses taught by experienced professionals."
+ />
+
 
   <div class="course-grid">
     <CourseCard

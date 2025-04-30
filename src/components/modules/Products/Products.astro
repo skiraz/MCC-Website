@@ -1,15 +1,21 @@
 ---
+import SectionHeader from "@nanoModules/sectionHeader/sectionHeader.astro";
 import "./Products.css";
 import Card from "@ui/Card/Card.astro";
 ---
 <section id="Products" class="section">
 <div class="Products">
   <div class="Products-header">
-    <h2>Featured Products</h2>
-    <p>
-      Expand your skills with our industry-leading courses taught by experienced professionals.
-    </p>
-    </div>
+
+
+
+    <SectionHeader
+ heading = "Featured Products"
+  paragraph = "Expand your skills with our industry-leading courses taught by experienced professionals."
+/>
+
+
+  
 
     <div class="Products-Cards">
       <Card

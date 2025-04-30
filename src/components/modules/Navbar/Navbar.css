@@ -26,12 +26,12 @@
 
 }
 
-.navbar button {
-  padding: 1rem rem;
-  /* Increase padding for height and width */
-  font-weight: 600;
+  /* .navbar .btn-filled {
+    
+    font-weight: 600;
+    padding: 0.5rem 2rem;
 
-}
+  } */
 
 
 nav ul {

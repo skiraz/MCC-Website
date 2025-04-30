@@ -10,7 +10,13 @@
 }
 
 .sectionAbout h1 {
-  margin-top: 7rem;
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 60px;
+
+}
+.sectionAbout h1 {
+  margin-top: 5rem;
   font-weight: 700;
   font-size: 60px;
 

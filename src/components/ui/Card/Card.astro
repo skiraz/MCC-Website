@@ -1,5 +1,6 @@
 ---
 
+import Buttons from "@nanoModules/buttons/buttons.astro";
 import "./Card.css";
 
 interface Props {
@@ -30,7 +31,8 @@ const { icon, image, title, description,button } = Astro.props as Props;
 
   {button && (
     
-      <button class="opposite-button">{button}</button>
+    <Buttons text="Learn more" type = "btn-filled"/>
+
     
   )}
 </div>

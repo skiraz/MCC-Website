@@ -30,36 +30,6 @@
   padding: 1rem 2rem; /* Increase padding for height and width */
 }
 
-.Products-header {
-    
-  /* Fixed width for the section */
-  margin: 0 auto;
-  
-color: #213a79;          /* change text color */
-      /* bold */
-margin-bottom: 3rem;     /* space below */
-line-height: 1.2;        /* tighten line height */
-
-  /* Center the section */
-}
-.Products-header h2 {
-  font-weight: 700;  
-  font-size: 40px;    
-  
-
-}
-.Products-header span {
-  
-  color: #2366ee;          /* change text color */
-  
-}
-.Products-header p {
-  
-  font-size: 15px;
-  
-}
-
-
 
 
 /* Responsively drop to 2 columns on medium screens */
@@ -80,5 +50,5 @@ line-height: 1.2;        /* tighten line height */
 .Products .learnMoreButton{
   
   text-align: center;         /* push its child button to the left */ 
-  margin-top: 2rem;         /* optional spacing above the button */">
+  margin-top: 2rem;         /* optional spacing above the button */
 }

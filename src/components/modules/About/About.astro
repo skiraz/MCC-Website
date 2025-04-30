@@ -2,6 +2,7 @@
 import "./About.css";
 import Card from "@ui/Card/Card.astro";
 import SectionHeader from "@nanoModules/sectionHeader/sectionHeader.astro";
+import Buttons from "@nanoModules/buttons/buttons.astro";
 ---
 
 <section id="About" class="section">
@@ -10,8 +11,8 @@ import SectionHeader from "@nanoModules/sectionHeader/sectionHeader.astro";
     paragraph=" Pioneering advancements in robotics and artificial intelligence to solve tomorrow's <br> challenges today."
   />
   <div class = "About-buttons">
-    <button class="contact-button">Get in Touch</button>
-    <button class="opposite-button">Learn about us</button>
+    <Buttons text="Learn more" type = "btn-filled" />
+    <Buttons text="Enroll now" type = "btn-outline" />
   </div>
     <div class="About-Cards">
       <Card

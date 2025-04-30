@@ -11,18 +11,10 @@
     margin-top: 1rem;
     /* Space above the buttons */
     margin-bottom: 2.5rem;
-    font-size: 40px;
-
 
     /* ← this creates the gap before the cards */
 
 }
-.About-buttons button{
-    padding: 1rem 4rem; /* Increase padding for height and width */
-    font-weight: bold;
-    font-size: 15px;
-}
-
 
 
 
@@ -50,6 +42,8 @@
     margin: 0 auto;
     
     /* Center the section */
+    box-shadow: rgba(37, 99, 235, 0.1) 0px 4px 16px, rgba(37, 99, 235, 0.1) 0px 8px 24px, rgba(37, 99, 235, 0.1) 0px 16px 56px;
+
 
 
 

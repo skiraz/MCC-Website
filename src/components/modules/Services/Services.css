@@ -1,34 +1,5 @@
 
 
-.services-header {
-    
-  /* Fixed width for the section */
-  margin: 0 auto;
-  
-color: #213a79;          /* change text color */
-      /* bold */
-margin-bottom: 3rem;     /* space below */
-line-height: 1.2;        /* tighten line height */
-
-  /* Center the section */
-}
-.services-header h2 {
-  font-weight: 700;  
-  font-size: 40px;    
-  
-
-}
-.services-header span {
-  
-  color: #2366ee;          /* change text color */
-  
-}
-.services-header p {
-  
-  font-size: 15px;
-  
-}
-
 
 .services-Cards {
     justify-content: center;
@@ -67,9 +38,9 @@ line-height: 1.2;        /* tighten line height */
   .Card {
     position: relative;
     box-shadow: rgba(37, 99, 235, 0.1) 0px 4px 16px, rgba(37, 99, 235, 0.1) 0px 8px 24px, rgba(37, 99, 235, 0.1) 0px 16px 56px;
-     box-shadow:
+     /* box-shadow:
     0 -23px  30px #2563eb,
-    0 2px -10px #2563eb; 
+    0 2px -10px #2563eb;  */
 
   }  
   .services-Cards .Card .title {

@@ -1,32 +1,5 @@
 
-.Courses-header {
-  
-    
-  
-margin: 0 auto;
-  
-color: #213a79;          
-      
-margin-bottom: 1rem;     
-line-height: 1.2;        
 
-  
-}
-.Courses-header h2 {
-  font-weight: 700;  
-  font-size: 60px;       /* make it larger */
-
-}
-.Courses-header span {
-  
-  color: #2366ee;          /* change text color */
-  
-}
-.Courses-header p {
-  
-  font-size: 20px;
-  
-}
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
