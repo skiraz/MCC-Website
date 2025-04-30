@@ -1,19 +1,6 @@
 ---
-import Services from "../components/SevicesComponents/Services.astro";
-import About from "../components/AboutComponents/About.astro";
-import Navbar from "../components/NavbarComponents/Navbar.astro";
-import Portfolio from "../components/PortfolioComponents/Portfolio.astro";
-import Products from "../components/ProductsComponents/Products.astro";
-import PreFooter from "../components/PreFooterComponent/PreFooter.astro";
-
-
-
-
-
-import "../styles/global.css";
-import "../styles/sections.css";
-import "../styles/button.css";
-import "../styles/logo.css";
+import SiteSections from "@modules";
+import "@styles";
 ---
 
 <html lang="en">
@@ -28,23 +15,23 @@ import "../styles/logo.css";
   </head>
 
   <body>
-    <header >
-      <Navbar />
+    <header>
+      <SiteSections.Navbar />
     </header>
 
     <main>
-      <About />
-      <Services />
-      <Portfolio /> 
-      <Products />
-      <PreFooter />
-      
-      
-      
+      <SiteSections.About />
+      <SiteSections.Services />
+      <SiteSections.Portfolio />
+      <SiteSections.Courses />
+      <SiteSections.Products />
+      <SiteSections.PreFooter />
     </main>
 
     <footer class="footer" style="text-align: center;">
-      <p>© 2025 MC<sup>2</sup> (Microelectronic Corporations). All rights reserved.      </p>
+      <p>
+        © 2025 MC<sup>2</sup> (Microelectronic Corporations). All rights reserved.
+      </p>
     </footer>
 
     <script type="module" src="/scripts/navbar.js"></script>

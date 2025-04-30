@@ -1,0 +1,27 @@
+.sectionAbout {
+    
+    /* Fixed width for the section */
+    margin: 0 auto;
+    
+  color: #213a79;          /* change text color */
+        /* bold */
+  margin-bottom: 1rem;     /* space below */
+  line-height: 1.2;        /* tighten line height */
+  
+    /* Center the section */
+}
+.sectionAbout h1 {
+    font-weight: 700;  
+    font-size: 60px;       /* make it larger */
+  
+}
+.sectionAbout span {
+    
+    color: #2366ee;          /* change text color */
+    
+  }
+.sectionAbout p {
+    
+    font-size: 20px;
+    
+  }

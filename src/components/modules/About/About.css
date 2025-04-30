@@ -1,31 +1,6 @@
 
-.About-header {
-    
-    /* Fixed width for the section */
-    margin: 0 auto;
-    
-  color: #213a79;          /* change text color */
-        /* bold */
-  margin-bottom: 1rem;     /* space below */
-  line-height: 1.2;        /* tighten line height */
-  
-    /* Center the section */
-}
-.About-header h1 {
-    font-weight: 700;  
-    font-size: 60px;       /* make it larger */
-  
-}
-.About-header span {
-    
-    color: #2366ee;          /* change text color */
-    
-  }
-.About-header p {
-    
-    font-size: 20px;
-    
-  }
+@import './sectionAbout.css';
+
 
 
 .About-buttons {

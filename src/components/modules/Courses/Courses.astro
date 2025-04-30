@@ -1,0 +1,53 @@
+---
+import CourseCard from "@ui/courseCard/courseCard.astro";
+import "./Courses.css";
+---
+
+<section id="Courses" class="section">
+  <div class="Courses-header">
+  <h2>Technical Courses</h2>
+  <p>Expand your skills with our industry-leading courses taught by experienced professionals.</p>
+</div>
+
+  <div class="course-grid">
+    <CourseCard
+      title="Introduction to Robotics Engineering"
+      level="Beginner"
+      duration="8 weeks"
+      topics={["Mechanical Design", "Control Systems", "Sensor Integration"]}
+      learnMoreUrl="/courses/robotics"
+      enrollUrl="/enroll/robotics"
+    />
+  
+    <CourseCard
+      title="AI for Everyone"
+      level="Intermediate"
+      duration="6 weeks"
+      topics={["Machine Learning", "Neural Networks", "Python"]}
+      learnMoreUrl="/courses/ai"
+      enrollUrl="/enroll/ai"
+    />
+  
+    <CourseCard
+      title="Advanced Control Systems"
+      level="Advanced"
+      duration="10 weeks"
+      topics={["PID Tuning", "State Estimation", "Feedback Loops"]}
+      learnMoreUrl="/courses/control"
+      enrollUrl="/enroll/control"
+    />
+    <CourseCard
+    title="Advanced Control Systems"
+    level="Advanced"
+    duration="10 weeks"
+    topics={["PID Tuning", "State Estimation", "Feedback Loops"]}
+    learnMoreUrl="/courses/control"
+    enrollUrl="/enroll/control"
+  />
+  </div>
+  
+</section>
+
+
+  
+  

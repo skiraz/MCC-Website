@@ -1,8 +1,6 @@
 ---
-import "../../styles/components/AboutComponents/About.css";
-import Card_Element from './Card_Element.astro';
-
-
+import "./About.css";
+import Card from "@ui/Card/Card.astro";
 ---
 
 <section id="About" class="section">
@@ -23,17 +21,17 @@ import Card_Element from './Card_Element.astro';
     </div>
 
     <div class="About-Cards">
-      <Card_Element
+      <Card
       icon="/assets/img/aiBrain.svg"
       title="AI Solutions"
       description="Intelligent software solutions built with advanced algorithms"
     />
-    <Card_Element
+    <Card
     icon="/assets/img/robot2.svg"
     title="Advanced Robotics"
     description="Cutting-edge robotic systems for industrial automation"
   />
-  <Card_Element
+  <Card
   icon="/assets/img/consult1.svg"
   title="Expert Consultation"
   description="Strategic technology guidance from industry experts"

@@ -1,7 +1,6 @@
 ---
-import "../../styles/components/PortfolioComponents/Portfolio.css";
-import CardElement from "../AboutComponents/Card_Element.astro";
-
+import "./Portfolio.css";
+import Card from "@ui/Card/Card.astro";
 ---
 
 <section id="Portfolio" class="section">
@@ -19,15 +18,15 @@ import CardElement from "../AboutComponents/Card_Element.astro";
         cutting-edge solutions.
       </p>
       <div class="Portfolio-Cards" >
-        <CardElement
+        <Card
         title="15+"
         description="Years Experience"
       />
-      <CardElement
+      <Card
         title="200+"
         description="Projects Completed"
       />
-      <CardElement
+      <Card
         title="20+"
         description="Tech Experts"
       />

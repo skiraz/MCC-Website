@@ -1,6 +1,6 @@
 ---
-import "../../styles/components/ServicesComponents/Services.css";
-import Card_Element from '../AboutComponents/Card_Element.astro';
+import "./Services.css";
+import Card from "@ui/Card/Card.astro";
 ---
 <section id="Services" class="section">
 <div class="services-header">
@@ -12,28 +12,28 @@ import Card_Element from '../AboutComponents/Card_Element.astro';
 
   
   <div class="services-Cards">
-      <Card_Element
+      <Card
       icon="/assets/img/smallrobot.svg"
       title="Robotics Engineering"
       description="Custom robotic solutions for manufacturing, logistics, and specialized applications tailored to your business needs."
     />
-    <Card_Element
+    <Card
     icon="/assets/img/AiDev.svg"
     title="AI Development"
     description="Intelligent software solutions built with advanced algorithms."
   />
-  <Card_Element
+  <Card
 icon="/assets/img/training.svg"
 title="Technical Training"
 description="Comprehensive courses designed to empower your team with cutting-edge technical skills in robotics and AI."
 />
-<Card_Element
+<Card
 icon="/assets/img/products.svg"
 title="Hardware Products"
 description="State-of-the-art microelectronic components and robotic systems designed for performance and reliability."
 />
 
-  <Card_Element
+  <Card
   icon="/assets/img/consult3.svg"
   title="Consultation Services"
   description="Expert guidance on implementing automation, AI, and robotic solutions within your existing infrastructure."

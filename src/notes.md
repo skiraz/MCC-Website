@@ -1,15 +1,15 @@
 todos:
 
-- [ ] change fonts
-- [ ] colors
-- [ ] card groups holder size
-- [ ] make a component for the nav bar
-- [ ] get the logo 
+- [x] change fonts
+- [x] colors
+- [x] card groups holder size
+- [x] make a component for the nav bar
+- [x] get the logo 
 - [ ] the portfolio section photos need to be smaller to fit to the whole view also make the elementes as a  grid that repeats 
-- [ ] nav bar not extended to the left 
+- [x] nav bar not extended to the left 
 - [ ] the page on 100% size have scrollers remove them 
 - [ ] test on the phone 
-- [ ] logo image 
+- [x] logo image 
 - [ ] use chatgpt to make the copy writing better and aligned with our goals 
 - [x] make the navbar scrolls to the section needed 
 - [ ] grammer check on the whole website 

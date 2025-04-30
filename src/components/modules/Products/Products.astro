@@ -1,6 +1,6 @@
 ---
-import "../../styles/components/ProductsComponents/Products.css";
-import Card_Element from '../AboutComponents/Card_Element.astro';
+import "./Products.css";
+import Card from "@ui/Card/Card.astro";
 ---
 <section id="Products" class="section">
 <div class="Products">
@@ -12,19 +12,19 @@ import Card_Element from '../AboutComponents/Card_Element.astro';
     </div>
 
     <div class="Products-Cards">
-      <Card_Element
+      <Card
       image="/assets/img/test.avif"
       title="MCC RoboArm X1"
       description="Intelligent software solutions built with advanced algorithms."
       button = "Learn More"
     />
-    <Card_Element
+    <Card
     image="/assets/img/coding2.avif"
     title="AI Vision System"
     description="Computer vision system capable of real-time object detection and classification."
     button = "Learn More"
   />
-  <Card_Element
+  <Card
   image="/assets/img/hardware.avif"
   title="MicroController 5000"
   description="High-performance microcontroller ideal for IoT applications and embedded systems."

@@ -1,6 +1,6 @@
 ---
 
-import "../../styles/components/AboutComponents/Card_Element.css";
+import "./Card.css";
 
 interface Props {
   icon?: string;
@@ -12,7 +12,7 @@ interface Props {
 
 const { icon, image, title, description,button } = Astro.props as Props;
 ---
-<div class="card-element">
+<div class="Card">
   {icon && (
     <div class="icon-circle">
       <img src={icon} alt={title} />

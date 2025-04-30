@@ -1,0 +1,39 @@
+---
+import "./courseCard.css";
+
+interface Props {
+  title: string
+  level: string
+  duration: string
+  topics: string[]
+  learnMoreUrl?: string
+  enrollUrl?: string
+}
+
+const {
+  title,
+  level,
+  duration,
+  topics,
+  learnMoreUrl = "#",
+  enrollUrl = "#"
+} = Astro.props as Props
+---
+<div class="CourseCard">
+  <div class="card-header">
+    <h3>{title}</h3>
+    <span class="badge">{level}</span>
+  </div>
+
+  <p class="duration">{duration}</p>
+
+  <p class="topics-label">Topics covered:</p>
+  <div class="topics">
+    {topics.map(topic => <span class="topic">{topic}</span>)}
+  </div>
+
+  <div class="card-buttons">
+    <a href={learnMoreUrl} class="btn-outline">Learn More</a>
+    <a href={enrollUrl} class="btn-filled">Enroll Now</a>
+  </div>
+</div>
