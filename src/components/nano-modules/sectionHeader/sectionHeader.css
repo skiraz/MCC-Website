@@ -1,0 +1,30 @@
+.sectionAbout {
+
+  margin: 0 auto;
+
+  color: #213a79;
+
+  margin-bottom: 1rem;
+  line-height: 1.2;
+
+}
+
+.sectionAbout h1 {
+  margin-top: 7rem;
+  font-weight: 700;
+  font-size: 60px;
+
+}
+
+.sectionAbout span {
+
+  color: #2366ee;
+
+}
+
+.sectionAbout p {
+  margin-bottom: 4rem;
+
+  font-size: 20px;
+
+}

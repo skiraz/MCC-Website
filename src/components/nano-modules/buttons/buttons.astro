@@ -1,0 +1,16 @@
+---
+import "./buttons.css"
+
+interface Props {
+  text: string;
+  type: string;
+  link?: string;
+  
+
+}
+
+const { text, type,link } = Astro.props;
+---
+
+
+<a href={link} class={type}>{text}</a>

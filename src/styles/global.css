@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
     color: #7c88a3; /* ✅ Global text color */
@@ -24,3 +25,26 @@ html {
     
   }
 
+  .section {
+    width: 100%; /* 🔥 each section full width */
+    padding: 6rem 2rem;
+    /* border-bottom: 1px solid black; */
+    text-align: center;
+    background-color: white;
+  }
+  
+  .section-content {
+    max-width: 800px; /* 🔥 content centered and limited */
+    margin: 0 auto;
+  }
+  
+  
+  .section:nth-child(even) {
+    background-color: rgb(244, 249, 255); /* Light blue */
+  }
+  
+  .section:nth-child(odd) {
+    background-color:white /* Stronger blue */
+  }
+  
+  

@@ -1,0 +1,14 @@
+---
+import "./sectionHeader.css";
+
+interface HTMLAttributes {
+  heading: string
+  paragraph: string
+}
+
+const { heading, paragraph } = Astro.props;
+---
+<div class="sectionAbout">
+  <h1 set:html={heading} />
+  <p set:html={paragraph} />
+</div>

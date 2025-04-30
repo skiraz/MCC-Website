@@ -98,19 +98,15 @@ line-height: 1.2;        /* tighten line height */
 }
 
 
-.Portfolio-text .nav-button .contact-button {
+.nav-button{
   
-  text-align: left;         /* push its child button to the left */
-  margin-top: 4rem;         /* optional spacing above the button */
-  font-weight: 700;
+  /* text-align: left;          */
+  margin-top: 4rem;         
+  /* font-weight: 700; */
 }
 
-.Portfolio-Cards .card-element {
+.Portfolio-Cards .Card {
   animation: breath 2s ease-in-out infinite;
   box-shadow: 0.5 4px 6px rgba(66, 20, 175, 0.1);
 }
 
-@keyframes breath {
-  0%, 100%   { transform: scale(1);     }
-  50%        { transform: scale(1.5);  }
-}

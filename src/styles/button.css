@@ -38,11 +38,6 @@
   }
 
   .contact-button:hover, .opposite-button:hover {
-    animation: breath 1.3s ease-in-out infinite;
+      animation: breath 1.3s ease-in-out infinite;
   }
 
-  @keyframes breath {
-    0%, 100%   { transform: scale(1);     }
-    50%        { transform: scale(1.5);  }
-  }
-  

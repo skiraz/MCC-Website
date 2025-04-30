@@ -1,5 +1,6 @@
 ---
 import "./courseCard.css";
+import Buttons from "@nanoModules/buttons/buttons.astro";
 
 interface Props {
   title: string
@@ -33,7 +34,7 @@ const {
   </div>
 
   <div class="card-buttons">
-    <a href={learnMoreUrl} class="btn-outline">Learn More</a>
-    <a href={enrollUrl} class="btn-filled">Enroll Now</a>
+    <Buttons text="Learn more" type = "btn-filled" />
+    <Buttons text="Enroll now" type = "btn-outline" />
   </div>
 </div>

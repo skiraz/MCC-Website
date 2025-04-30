@@ -12,19 +12,15 @@
   gap: 5rem;
 }
 
-.nav{
-  width: 600px;       /* or whatever fixed/max width you need */
-  margin: 0 auto;     
 
-}
 
 /* When scrolled */
 .navbar.scrolled {
   padding:  0.7rem 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #2563eb;
   box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.1),
-    0 2px 10px rgb(29, 78, 216);
+    0 2px 4px #2563eb,
+    0 2px 10px #2563eb;
   /* 🚀 Layered shadows for a 3D effect */
 
 
@@ -36,9 +32,6 @@
   font-weight: 600;
 
 }
-
-
-
 
 
 nav ul {
@@ -74,3 +67,76 @@ nav ul {
 
 
 
+/* Parent Logo Container – no padding or gap */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;           /* remove gap between children */
+  padding: 0;       /* remove any parent padding */
+  margin: 0;        /* remove any parent margin */
+}
+
+/* Logo image – absolutely zero padding/margin and block display */
+.logo-img {
+  
+  display: block;   /* kills inline whitespace */
+  width: 70px;     /* or whatever final width you want */
+  height: auto;     /* maintain aspect ratio */
+  padding: 0;       /* zero padding */
+  margin: 0;        /* zero margin */
+  border-radius: 0; /* remove rounding, if that’s unwanted */
+  object-fit: contain; /* or cover, whichever crops best */
+  /* animation: shadow-around 4s linear infinite; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  
+  transform: translateX(-400%);
+  /* make it invisible until the animation starts */
+  opacity: 0;
+  /* trigger the animation on load */
+
+}
+
+  
+
+.logo-img {
+  /* 1) slide in for 3s, then 2) start breathing */
+  animation:
+    enter-from-left 3s ease-out forwards,
+    breath           2s ease-in-out 3s infinite;
+}
+
+
+/* keyframes for the sliding motion */
+
+
+.sub-logo:hover {
+    transform: translateY(-4px);
+    
+}
+.logo-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+ 
+/* your existing sub-logo rules */
+.sub-logo {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;  
+  color: #1e3a8ab3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* animation: breath 2s ease-in-out infinite; */
+  
+  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+@media (min-width: 768px) {
+  .sub-logo {
+    display: inline-block;
+  }
+}
+
+
+
+/* define the moving-shadow keyframes */

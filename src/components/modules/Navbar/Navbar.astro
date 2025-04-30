@@ -1,31 +1,26 @@
 ---
 import "./Navbar.css";
+import Buttons from "@nanoModules/buttons/buttons.astro";
 ---
 
- 
 <!-- HTML -->
 <div class="navbar">
-  
-    <div class="logo">
-      <a href="#top"><img src="/assets/img/MCCLogo.png" alt="MC² Logo" class="logo-img" /></a>
-      <span class="sub-logo">Microelectronic Corporations</span>
-    </div>
-  
-
-
-
-<nav class="nav-links">
-  <ul>
-    <li><a href="#About">Services</a></li>
-    <li><a href="#Services">About</a></li>
-    <li><a href="#Portfolio">Products</a></li>
-    <li><a href="#Products">Courses</a></li>
-    <li><a href="#PreFooter">Contact</a></li>
-  </ul>
-</nav>
-
-
-    
-  <button class="contact-button">Get in Touch</button>
-
+  <div class="logo">
+    <a href="#top">
+      <img class="logo-img" src="/assets/img/MCCLogo.png" alt="MC² Logo" />
+    </a>
+    <span class="sub-logo">Microelectronic Corporations</span>
   </div>
+
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Products">Courses</a></li>
+      <li><a href="#PreFooter">Contact</a></li>
+    </ul>
+  </nav>
+
+  <Buttons text="Get In Touch" type = btn-filled />
+</div>

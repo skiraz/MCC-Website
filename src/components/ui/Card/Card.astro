@@ -10,6 +10,7 @@ interface Props {
   button?: string;
 }
 
+
 const { icon, image, title, description,button } = Astro.props as Props;
 ---
 <div class="Card">
@@ -25,7 +26,7 @@ const { icon, image, title, description,button } = Astro.props as Props;
     </div>
   )}
   <div class="title">{title}</div>
-  <div class="descrip">{description}</div>
+  <div class="description">{description}</div>
 
   {button && (
     

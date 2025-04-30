@@ -70,37 +70,4 @@
     margin-top: 1rem;
   }
   
-  .btn-outline {
-    padding: 0.5rem 1rem;
-    border: 1px solid #2563eb;
-    background: white;
-    color: #2563eb;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s ease;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .btn-outline:hover {
-    background-color: #eef6ff;
-  }
-  
-  .btn-filled {
-    padding: 0.5rem 1rem;
-    background-color: #2563eb;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s ease;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .btn-filled:hover {
-    background-color: #1d4ed8;
-  }
   

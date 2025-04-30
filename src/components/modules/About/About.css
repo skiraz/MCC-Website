@@ -1,6 +1,4 @@
 
-@import './sectionAbout.css';
-
 
 
 .About-buttons {
@@ -36,7 +34,7 @@
     flex-direction: row;
     /* be explicit: row, not column */
 
-    gap: 6rem;
+    gap: 1rem;
     /* space between each card */
     justify-content: center;
     /* center them in the container */
@@ -50,6 +48,7 @@
     width: 1200px;
     /* Fixed width for the section */
     margin: 0 auto;
+    
     /* Center the section */
 
 
@@ -65,23 +64,19 @@
 }
 
 
-.About-Cards .card-element {
+.About-Cards .Card {
     box-shadow: none;
     /* slightly darker on hover */
 
     
 }
-.About-Cards .card-element .icon-circle img {
+.About-Cards .Card .icon-circle img {
     transform: scale(2);
     animation: breath 2.5s ease-in-out infinite;
     
  }
-.About-Cards .card-element .icon-circle img:hover {
+.About-Cards .Card .icon-circle img:hover {
     transform: scale(1.3);
     
  }
 
-@keyframes breath {
-    0%, 100%   { transform: scale(1);     }
-    50%        { transform: scale(1.5);  }
-  }

@@ -1,42 +1,34 @@
 ---
 import "./About.css";
 import Card from "@ui/Card/Card.astro";
+import SectionHeader from "@nanoModules/sectionHeader/sectionHeader.astro";
 ---
 
 <section id="About" class="section">
-  <div class="About-header">
-    <h1>Powering The Future With <br>  <span>MC<sup>2</sup>  </span>  Technology</h1>
-    <p>
-      Pioneering advancements in robotics and artificial intelligence to solve
-      tomorrow's <br> challenges today.
-    </p>
-    </div>
-
-    <div class="About-buttons">
-      
-        <button class="contact-button">Get in Touch</button>
-        <button class="opposite-button">Learn about us</button>
-      
-      <div></div>
-    </div>
-
+  <SectionHeader
+    heading= "Powering The Future With <br> Technology"
+    paragraph=" Pioneering advancements in robotics and artificial intelligence to solve tomorrow's <br> challenges today."
+  />
+  <div class = "About-buttons">
+    <button class="contact-button">Get in Touch</button>
+    <button class="opposite-button">Learn about us</button>
+  </div>
     <div class="About-Cards">
       <Card
-      icon="/assets/img/aiBrain.svg"
-      title="AI Solutions"
-      description="Intelligent software solutions built with advanced algorithms"
-    />
-    <Card
-    icon="/assets/img/robot2.svg"
-    title="Advanced Robotics"
-    description="Cutting-edge robotic systems for industrial automation"
-  />
-  <Card
-  icon="/assets/img/consult1.svg"
-  title="Expert Consultation"
-  description="Strategic technology guidance from industry experts"
-/>
-        
-        
-  </div>
+        icon="/assets/img/aiBrain.svg"
+        title="AI Solutions"
+        description="Intelligent software solutions built with advanced algorithms"
+      />
+      <Card
+        icon="/assets/img/robot2.svg"
+        title="Advanced Robotics"
+        description="Cutting-edge robotic systems for industrial automation"
+      />
+      <Card
+        icon="/assets/img/consult1.svg"
+        title="Expert Consultation"
+        description="Strategic technology guidance from industry experts"
+      />
+    </div>
+  </SectionHeader>
 </section>
