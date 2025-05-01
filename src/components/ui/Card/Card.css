@@ -49,14 +49,13 @@
 }
 
 .description {
+
   font-size: 0.9rem;
-  
-  
   line-height: 1.4;
 }
 
 .image img {
-  width: 500px;     /* or whatever fits your design */
+  width: 100%;     /* or whatever fits your design */
   height: auto;     /* maintains aspect ratio */
   object-fit: contain;
 }

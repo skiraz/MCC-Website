@@ -1,10 +1,12 @@
+
+.Products{
+  max-width: 1400px; /* Set a max width for the section */
+}
 .Products-Cards {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* ← exactly 3 columns */
-  gap: 2rem;                               
-  /* width: 200px; */
-  /* Fixed width for the section */
+  grid-template-columns: repeat(3, 1fr);  /* exactly 3 columns */
+  gap: 2rem;
   margin: 0 auto;
   
 }
@@ -52,3 +54,16 @@
   text-align: center;         /* push its child button to the left */ 
   margin-top: 2rem;         /* optional spacing above the button */
 }
+
+
+
+.Products-Cards .Card {
+  animation: pop-up 6s linear infinite;
+}
+
+.Products-Cards .Card:nth-child(1) { animation-delay: 0s; }
+.Products-Cards .Card:nth-child(2) { animation-delay: 2s; }
+.Products-Cards .Card:nth-child(3) { animation-delay: 4s; }
+
+
+

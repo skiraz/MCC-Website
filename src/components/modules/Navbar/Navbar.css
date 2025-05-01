@@ -136,7 +136,10 @@ nav ul {
     display: inline-block;
   }
 }
-
+.navbar .btn-filled{
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+}
 
 
 /* define the moving-shadow keyframes */
