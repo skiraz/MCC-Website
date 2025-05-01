@@ -1,22 +1,20 @@
 
 
-
 .About-buttons {
-    
     display: flex;
     justify-content: center;
-    /* Center the buttons */
-    gap: 1rem;
-    /* Space between buttons */
+    align-items: center; /* ← prevents the buttons from stretching vertically */
+    gap: 2rem;
     margin-top: 1rem;
-    /* Space above the buttons */
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    align-items: baseline;
 
-    /* ← this creates the gap before the cards */
+  }
 
+.About-buttons a{
+    padding: 0.7rem 5rem;
 }
-
-
+  
 
 
 .About-Cards {

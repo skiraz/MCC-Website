@@ -1,11 +1,16 @@
+.CourseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
 .CourseCard {
     margin-top: 1rem;
     border: 1px solid #e0e7ff;
     border-radius: 12px;
-    padding: 1.1rem;
+    padding: 2rem 1.5rem;
     /* max-width: 500px; */
     /* width: 100%; */
-  
+    transition: transform 0.1mjs ease, box-shadow 0.1mjs ease;
 
     background: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
@@ -70,5 +75,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    align-items: baseline;
   }
   

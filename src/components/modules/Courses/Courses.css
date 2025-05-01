@@ -8,6 +8,10 @@
   grid-auto-rows: auto;
 }
 
+
+
+
+
 /* Force 2 max per row */
 /* @media (min-width: 768px) {
   .course-grid {
