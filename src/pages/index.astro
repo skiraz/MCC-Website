@@ -1,6 +1,10 @@
 ---
 import SiteSections from "@modules";
 import "@styles/index.css"
+import ProSidebar from "D:/projects/mcc/website/mcc/src/components/modules/SideBar/SideBar.jsx";
+
+
+
 ---
 
 <html lang="en">
@@ -14,7 +18,7 @@ import "@styles/index.css"
       content="Welcome to the future. Building something amazing."
     />
     <link rel="icon" href="/assets/img/Micon2.png" type="image/png" sizes="1x3">
-
+    
 
     
 
@@ -27,12 +31,17 @@ import "@styles/index.css"
     </header>
 
     <main>
+      
+
       <SiteSections.About />
       <SiteSections.Services />
       <SiteSections.Portfolio />
       <SiteSections.Courses />
       <SiteSections.Products />
       <SiteSections.PreFooter />
+      <!-- <ProSidebar /> -->
+      <ProSidebar client:load />
+
     </main>
 
     <footer class="footer" style="text-align: center;">
