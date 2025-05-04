@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: center;  /* ← centers all children (your <nav>) */
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -10,21 +10,38 @@
   z-index: 1000;
   transition: all 0.5s ease;
   gap: 5rem;
+  overflow: hidden;
+  /* box-shadow: 0 2px 4px #2563eb; */
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: var(--progress, 0%);
+  background: #2563eb;
+  transition: width 0.06s ease;
+}
+
+.navbar.scrolled {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #2563eb;
+  box-shadow:
+    0 2px 4px #2563eb,
+    0 2px 4px #2563eb;
+  /* the shadow stays, the progress bar updates separately */
 }
 
 
-
-/* When scrolled */
-.navbar.scrolled {
+/* .navbar.scrolled {
   padding:  0.7rem 1rem;
   border-bottom: 1px solid #2563eb;
   box-shadow:
     0 2px 4px #2563eb,
     0 2px 10px #2563eb;
-  /* 🚀 Layered shadows for a 3D effect */
-
-
-}
+  }  */
 
   /* .navbar .btn-filled {
     
@@ -143,3 +160,15 @@ nav ul {
 
 
 /* define the moving-shadow keyframes */
+
+.navbar a {
+  text-decoration: none;
+  /* color: #1e3a8ab3; */
+  transition: all 0.3s ease;
+  font-weight: 400; /* normal by default */
+}
+
+.navbar a.active {
+  font-weight: 700;  /* bold when active */
+  color: #2563eb;    /* optional highlight color */
+}

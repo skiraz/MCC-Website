@@ -6,6 +6,7 @@ import Courses from "./Courses/Courses.astro"
 import Portfolio from "./Portfolio/Portfolio.astro"
 import Products from "./Products/Products.astro"
 import PreFooter from "./PreFooter/PreFooter.astro"
+import SideBar from "./SideBar/SideBar"
 
 export default {
   Navbar,
@@ -14,5 +15,6 @@ export default {
   Courses,
   Portfolio,
   Products,
-  PreFooter
+  PreFooter,
+  SideBar
 };

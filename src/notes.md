@@ -28,3 +28,4 @@ tip you can search and replace
  ideas : 
 - make the course section with enrollment using their emial and demonstrate this content on social media, + use the email to send notifications on the upcoming courses. 
 
+i have added star light
